@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class Quest1Test {
-    Quest1 quest1 = new Quest1();
+    private final Quest1 quest1 = new Quest1();
 
     @Test
     public void testPart1() {
