@@ -2,6 +2,7 @@ package everybody.codes;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.List;
 import org.junit.Test;
 
 public class Quest2Test {
@@ -28,5 +29,13 @@ public class Quest2Test {
     }
 
     @Test
-    public void testPart3() {}
+    public void testPart3() {
+        String[] words = {"THE", "OWE", "MES", "ROD", "RODEO"};
+        List<String> lines = List.of(
+            "HELWORLT",
+            "ENIGWDXL",
+            "TRODEOAL"
+        );
+        assertEquals(10, quest.countRunicScales(words, lines));
+    }
 }
