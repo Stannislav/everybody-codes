@@ -2,29 +2,13 @@
 
 https://everybody.codes
 
-## Compiling and Running
-
-Set up classpath and create corresponding directory.
+Build:
 
 ```shell
-export CLASSPATH=out
-mkdir -p $CLASSPATH
+mvn clean package
 ```
 
-Compile all files.
-
+Run:
 ```shell
-javac -d "$CLASSPATH" src/**/*.java
-```
-
-Run a quest solution.
-
-```shell
-java everybody.codes.Quest1
-```
-
-Iterate on a quest solution.
-
-```shell
-javac -d $CLASSPATH src/everybody/codes/Quest1.java && java everybody.codes.Quest1
+java -cp target/everybody-codes-1.0-SNAPSHOT.jar everybody.codes.Quest1
 ```

@@ -13,7 +13,7 @@ public class Quest1 {
         }
     }
 
-    private int computePotions(String input, int groupSize) {
+    public int computePotions(String input, int groupSize) {
         int result = 0;
         for (int i = 0; i < input.length(); i += groupSize) {
             String group = input.substring(i, i + groupSize);
