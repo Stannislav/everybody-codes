@@ -10,7 +10,7 @@ public class Quest2Test {
 
     @Test
     public void testPart1() {
-        String[] words = {"THE", "OWE", "MES", "ROD", "HER"};
+        List<String> words = List.of("THE", "OWE", "MES", "ROD", "HER");
 
         assertEquals(4, quest.countRunicWords(words, "AWAKEN THE POWER ADORNED WITH THE FLAMES BRIGHT IRE"));
         assertEquals(3, quest.countRunicWords(words, "THE FLAME SHIELDED THE HEART OF THE KINGS"));
@@ -20,7 +20,7 @@ public class Quest2Test {
 
     @Test
     public void testPart2() {
-        String[] words = {"THE", "OWE", "MES", "ROD", "HER"};
+        List<String> words = List.of("THE", "OWE", "MES", "ROD", "HER");
 
         assertEquals(15, quest.countRunicSymbols(words, "AWAKEN THE POWER ADORNED WITH THE FLAMES BRIGHT IRE"));
         assertEquals(9, quest.countRunicSymbols(words, "THE FLAME SHIELDED THE HEART OF THE KINGS"));
@@ -30,7 +30,7 @@ public class Quest2Test {
 
     @Test
     public void testPart3() {
-        String[] words = {"THE", "OWE", "MES", "ROD", "RODEO"};
+        List<String> words = List.of("THE", "OWE", "MES", "ROD", "RODEO");
         List<String> lines = List.of(
             "HELWORLT",
             "ENIGWDXL",
